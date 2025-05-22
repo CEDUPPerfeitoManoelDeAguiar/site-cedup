@@ -31,7 +31,7 @@ const Cursos = () => {
       title: "Recursos Humanos",
       image: "/imagens/cursos/Recursos humanos.png",
       modalidades: "Subsequente - Noturno\n100% presencial",
-      link: "/recursoshumanos"
+      link: "/recursoshumanos",
     },
     {
       id: 5,

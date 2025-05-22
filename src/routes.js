@@ -8,6 +8,7 @@ import React from "react";
 import './App.css';
 import NovosCursos from "./Pages/NovosCursos";
 import Cursos from "./Pages/Cursos";
+import RecursosHumanos from "./Pages/Cursos/RecursosHumanos";
 
 const AnimatedPage = ({ children }) => (
   <motion.div
@@ -40,6 +41,8 @@ function AnimatedRoutes() {
           <Route path="/sobre" element={<LayoutWithHeader><Sobre /></LayoutWithHeader>} />
           <Route path="/novos-cursos" element={<LayoutWithHeader><NovosCursos /></LayoutWithHeader>} />
           <Route path="/cursos" element={<LayoutWithHeader><Cursos /></LayoutWithHeader>} />
+          <Route path="/recursoshumanos" element={<LayoutWithHeader><RecursosHumanos /></LayoutWithHeader>} />
+
       </Routes>
     </AnimatePresence>
   );

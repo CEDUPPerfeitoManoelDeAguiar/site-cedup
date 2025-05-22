@@ -43,6 +43,24 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Destaques Section */}
+        <div className="highlights-container">
+          <div className="container">
+            <h2 className="section-title" style={{marginBottom: '1.5rem'}}>Destaques</h2>
+            <div className="highlights-list">
+              <div className="highlight-item">
+                <Link to="/feira-ciencias">Feira de Ciências</Link>
+              </div>
+              <div className="highlight-item">
+                <Link to="/novos-cursos">Novos Cursos 2/2025</Link>
+              </div>
+              <div className="highlight-item">
+                <Link to="/grêmio">Eleições do Grêmio</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Agenda Section */}
         <section className="section" style={{backgroundColor: '#f5f7fa'}}>
           <div className="container">
