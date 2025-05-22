@@ -22,13 +22,13 @@ const Home = () => {
           <div className="slides">
             {[1, 2, 3, 4, 5, 6, 7].map((slideNum) => (
               <div key={slideNum} className="slide" style={{ display: slideNum === currentSlide ? 'block' : 'none' }}>
-                <Link to="/novos-cursos">
+                {/* <Link to="/novos-cursos"> */}
                   <img
                     src={`/imagens/slider/${slideNum}.png`}
                     alt={`Slide ${slideNum}`}
                     style={{ width: '100%' }}
                   />
-                </Link>
+                {/* </Link> */}
               </div>
             ))}
           </div>

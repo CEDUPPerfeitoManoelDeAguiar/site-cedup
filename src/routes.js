@@ -4,6 +4,10 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Sobre from "./Pages/NossaHistoria"
 import Footer from "./Components/Footer";
+import React from "react";
+import './App.css';
+import NovosCursos from "./Pages/NovosCursos";
+import Cursos from "./Pages/Cursos";
 
 const AnimatedPage = ({ children }) => (
   <motion.div
@@ -34,6 +38,8 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<LayoutWithHeader><Home /></LayoutWithHeader>} />
           <Route path="/sobre" element={<LayoutWithHeader><Sobre /></LayoutWithHeader>} />
+          <Route path="/novos-cursos" element={<LayoutWithHeader><NovosCursos /></LayoutWithHeader>} />
+          <Route path="/cursos" element={<LayoutWithHeader><Cursos /></LayoutWithHeader>} />
       </Routes>
     </AnimatePresence>
   );
