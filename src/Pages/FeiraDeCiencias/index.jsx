@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-const CienciasDados = () => {
+const FeiraDeCiencias = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -55,10 +55,10 @@ const CienciasDados = () => {
             <span>Segundos</span>
           </div>
         </div>
-        <p>Fique Ligado para Atualizações!</p>
+         <p>Fique Ligado para Atualizações!</p>
       </div>
     </div>
   );
 };
 
-export default CienciasDados;
+export default FeiraDeCiencias;
