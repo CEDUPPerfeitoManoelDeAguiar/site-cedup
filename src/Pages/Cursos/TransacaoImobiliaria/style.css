@@ -1,0 +1,361 @@
+/* Estilos específicos para a página de Transações Imobiliárias */
+.site-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md) var(--space-xl);
+  background-color: var(--color-background);
+}
+
+.cursos-titulo {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin: var(--space-xl) 0;
+  position: relative;
+  padding-bottom: var(--space-md);
+}
+
+.cursos-titulo::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--color-secondary);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content__p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+  text-align: justify;
+}
+
+/* Estilos para abas e tabelas */
+.tabela-curso {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-xl);
+  overflow: hidden;
+}
+
+.app__card-list.abas-curso {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid var(--color-secondary-lighter);
+}
+
+.app__card-list-item {
+  flex: 1;
+  text-align: center;
+}
+
+.app__card-button.aba-curso {
+  width: 100%;
+  padding: var(--space-md);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-text-light);
+  transition: var(--transition-fast);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  position: relative;
+}
+
+.app__card-button.aba-curso:hover {
+  color: var(--color-primary);
+  background-color: var(--color-hover);
+}
+
+.app__card-button.aba-curso.active {
+  color: var(--color-secondary);
+  background-color: rgba(71, 172, 224, 0.1);
+}
+
+.app__card-button.aba-curso.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-secondary);
+}
+
+.conteudo-aba-curso {
+  padding: var(--space-lg);
+  display: none;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.conteudo-aba-curso.active {
+  display: block;
+}
+
+.subsequente-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-md);
+}
+
+.subsequente-table th,
+.subsequente-table td {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--color-secondary-lighter);
+}
+
+.subsequente-table th {
+  width: 30%;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.subsequente-table tr:hover {
+  background-color: var(--color-hover);
+}
+
+/* Estilos para objetivos e perfil */
+.objetivos,
+.perfil-egresso,
+.grade-curricular {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.objetivos h2,
+.perfil-egresso h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--color-secondary-light);
+  padding-bottom: var(--space-xs);
+  display: inline-block;
+}
+
+.objetivos p,
+.perfil-egresso p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.objetivos ul,
+.perfil-egresso ul {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.objetivos li,
+.perfil-egresso li {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+  position: relative;
+  line-height: 1.6;
+}
+
+.objetivos li::before,
+.perfil-egresso li::before {
+  content: "▹";
+  color: var(--color-secondary);
+  font-weight: bold;
+  display: inline-block;
+  width: var(--space-sm);
+  margin-left: calc(-1 * var(--space-sm));
+}
+
+/* Estilos para grade curricular */
+.grade-curricular h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--color-secondary-light);
+  padding-bottom: var(--space-xs);
+  display: inline-block;
+}
+
+.abas-grade-curricular {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg) 0;
+  border-bottom: 2px solid var(--color-secondary-lighter);
+}
+
+.abas-grade-curricular li {
+  flex: 1;
+  text-align: center;
+}
+
+.aba-grade-curricular {
+  width: 100%;
+  padding: var(--space-md);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-text-light);
+  transition: var(--transition-fast);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  position: relative;
+}
+
+.aba-grade-curricular:hover {
+  color: var(--color-primary);
+  background-color: var(--color-hover);
+}
+
+.aba-grade-curricular.active {
+  color: var(--color-secondary);
+  background-color: rgba(71, 172, 224, 0.1);
+}
+
+.aba-grade-curricular.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-secondary);
+}
+
+.conteudo-aba-grade-curricular {
+  display: none;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.conteudo-aba-grade-curricular.active {
+  display: block;
+}
+
+.modulo1-table,
+.modulo2-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-md);
+}
+
+.modulo1-table th,
+.modulo1-table td,
+.modulo2-table th,
+.modulo2-table td {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--color-secondary-lighter);
+}
+
+.modulo1-table th,
+.modulo2-table th {
+  background-color: var(--color-secondary-light);
+  color: var(--color-white);
+}
+
+.modulo1-table tr:nth-child(even),
+.modulo2-table tr:nth-child(even) {
+  background-color: rgba(71, 172, 224, 0.05);
+}
+
+.modulo1-table tr:hover,
+.modulo2-table tr:hover {
+  background-color: var(--color-hover);
+}
+
+.total-hours {
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--space-md);
+}
+
+.estagio-row {
+  background-color: rgba(104, 159, 224, 0.1) !important;
+  font-weight: 600;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cursos-titulo {
+    font-size: 2rem;
+  }
+  
+  .app__card-list.abas-curso,
+  .abas-grade-curricular {
+    flex-direction: column;
+  }
+  
+  .subsequente-table th,
+  .subsequente-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .subsequente-table th {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  
+  .modulo1-table,
+  .modulo2-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .app__card-button.aba-curso.active::after,
+  .aba-grade-curricular.active::after {
+    height: 2px;
+  }
+  
+  .objetivos li,
+  .perfil-egresso li {
+    margin-bottom: var(--space-md);
+  }
+}
+
+@media (max-width: 576px) {
+  .cursos-titulo {
+    font-size: 1.8rem;
+  }
+  
+  .site-content {
+    padding: 0 var(--space-sm) var(--space-lg);
+  }
+  
+  .conteudo-aba-curso,
+  .objetivos,
+  .perfil-egresso,
+  .grade-curricular {
+    padding: var(--space-md);
+  }
+  
+  .content__p {
+    font-size: 1rem;
+  }
+  
+  .perfil-egresso ul {
+    padding-left: var(--space-md);
+  }
+}

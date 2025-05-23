@@ -12,6 +12,8 @@ import RecursosHumanos from "./Pages/Cursos/RecursosHumanos";
 import Gremio from "./Pages/Gremio";
 import DesenvolvimentoSistemas from "./Pages/Cursos/DesenvolvimentoDeSistemas";
 import Logistica from "./Pages/Cursos/Logistica";
+import Qualidade from "./Pages/Cursos/Qualidade";
+import TransacoesImobiliarias from "./Pages/Cursos/TransacaoImobiliaria";
 
 const AnimatedPage = ({ children }) => (
   <motion.div
@@ -48,6 +50,8 @@ function AnimatedRoutes() {
           <Route path="/gremio" element={<LayoutWithHeader><Gremio /></LayoutWithHeader>} />
           <Route path="/desenvolvimento-sistemas" element={<LayoutWithHeader><DesenvolvimentoSistemas /></LayoutWithHeader>} />7
           <Route path="/logistica" element={<LayoutWithHeader><Logistica /></LayoutWithHeader>} />
+          <Route path="/qualidade" element={<LayoutWithHeader><Qualidade /></LayoutWithHeader>} />
+          <Route path="/transacoesimobiliarias" element={<LayoutWithHeader><TransacoesImobiliarias /></LayoutWithHeader>} />
       </Routes>
     </AnimatePresence>
   );
