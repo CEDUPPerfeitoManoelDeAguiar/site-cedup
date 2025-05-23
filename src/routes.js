@@ -17,6 +17,9 @@ import TransacoesImobiliarias from "./Pages/Cursos/TransacaoImobiliaria";
 import Administracao from "./Pages/Cursos/Administracao";
 import FeiraDeCiencias from "./Pages/FeiraDeCiencias";
 import CienciasDados from "./Pages/Cursos/CienciasDeDados";
+import AreaDoAluno from "./Pages/AreaDoAluno";
+import FaleConosco from "./Pages/FaleConosco";
+import TrabalheConosco from "./Pages/TrabalheConosco";
 
 const AnimatedPage = ({ children }) => (
   <motion.div
@@ -58,6 +61,9 @@ function AnimatedRoutes() {
           <Route path="/administracao" element={<LayoutWithHeader><Administracao /></LayoutWithHeader>} />
           <Route path="/cienciasdados" element={<LayoutWithHeader><CienciasDados /></LayoutWithHeader>} />
           <Route path="/feira-ciencias" element={<LayoutWithHeader><FeiraDeCiencias /></LayoutWithHeader>} />
+          <Route path="/areadoaluno" element={<LayoutWithHeader><AreaDoAluno /></LayoutWithHeader>} />
+          <Route path="/contato" element={<LayoutWithHeader><FaleConosco /></LayoutWithHeader>} />
+          <Route path="/quero-trabalhar" element={<LayoutWithHeader><TrabalheConosco /></LayoutWithHeader>} />
       </Routes>
     </AnimatePresence>
   );

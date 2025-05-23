@@ -68,7 +68,7 @@ const Home = () => {
             <div className="agenda">
               <ul>
                 {[
-                  { date: '28 JUN', title: 'Sabado Letivo' },
+                  { date: '28 JUN', title: 'Sábado Letivo' },
                   { date: '30 JUN', title: 'IV Feira de Ciência e Tecnologia', link: '/feira-ciencias' },
                   { date: '11 JUL', title: 'Festa Junina' },
                   { date: '21 JUL', title: 'Inicio do Recesso dos Alunos' },

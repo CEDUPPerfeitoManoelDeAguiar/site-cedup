@@ -35,7 +35,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/aluno" className="nav-link" onClick={toggleMenu}>
+              <Link to="/areadoaluno" className="nav-link" onClick={toggleMenu}>
                 <span className="material-symbols-outlined"></span>
                 <span>Área do Aluno</span>
               </Link>

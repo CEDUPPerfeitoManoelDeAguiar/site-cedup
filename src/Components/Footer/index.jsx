@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import '../../App.css';
 
 const Footer = () => {
@@ -33,13 +36,13 @@ const Footer = () => {
               <h3>Siga-nos</h3>
               <div className="social-links">
                 <a href="https://www.facebook.com/cedup.guaramirim" target="_blank" rel="noopener noreferrer">
-                  <span className="material-symbols-outlined">facebook</span>
+                  <span className="material-symbols-outlined"><FaFacebookF /></span>
                 </a>
                 <a href="https://www.instagram.com/cedupguaramirim/" target="_blank" rel="noopener noreferrer">
-                  <span className="material-symbols-outlined">instagram</span>
+                  <span className="material-symbols-outlined"><FaInstagram /></span>
                 </a>
                 <a href="https://www.linkedin.com/company/cedup-perfeito-manoel-de-aguiar/" target="_blank" rel="noopener noreferrer">
-                  <span className="material-symbols-outlined">linkedin</span>
+                  <span className="material-symbols-outlined"><FaLinkedinIn /></span>
                 </a>
               </div>
             </div>
