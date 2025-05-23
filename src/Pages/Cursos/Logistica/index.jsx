@@ -77,6 +77,9 @@ const Logistica = () => {
 
   return (
     <div className="site-content">
+        <br />
+        <br />
+        <br />
       <h1 className="cursos-titulo">LOGÍSTICA</h1>
       
       <article>
