@@ -55,7 +55,7 @@ const Home = () => {
                 <Link to="/novos-cursos">Novos Cursos 2/2025</Link>
               </div>
               <div className="highlight-item">
-                <Link to="/grêmio">Eleições do Grêmio</Link>
+                <Link to="/gremio">Eleições do Grêmio</Link>
               </div>
             </div>
           </div>

@@ -4,7 +4,6 @@ import '../../App.css';
 
 const NovosCursos = () => {
   return (
-    
     <div className="site">
         <br />
         <br />
@@ -14,8 +13,8 @@ const NovosCursos = () => {
 
         <article className="content__pronatec">
           <p className="intro-text">
-            Novos cursos técnicos subsequentes serão ofertados no segundo semestre de 2024: 
-            <strong> Transações Imobiliárias</strong> e <strong>Recursos Humanos</strong>.
+            Novo curso técnico subsequente será ofertado no segundo semestre de 2025: 
+            <strong> Recursos Humanos</strong>.
             <br /><br />
             Se você tem interesse em dar continuidade a seus estudos, essa é sua chance!
             <br />Acesse o formulário para indicar sua intenção, e assim que o período de 
@@ -33,25 +32,15 @@ const NovosCursos = () => {
           </a>
 
           <div className="course-section">
-            <h3 className="título-nossahistoria">Transações Imobiliárias</h3>
-            <p>
-              Os profissionais técnicos em Transações Imobiliárias além de trabalhar como
-              corretores podem atuar em outras empresas do setor imobiliário, como empresas de
-              construção civil, urbanizadoras, loteadoras, incorporadoras, agências financeiras etc.
-              A possibilidade de empreender e abrir seu próprio negócio também é uma opção.
-            </p>
-            
-            <Link className="download" to="/transacoesimobiliarias" aria-label="Mais informações sobre Transações Imobiliárias">
-              Saiba mais sobre o curso
-            </Link>
-          </div>
-
-          <div className="course-section">
             <h3 className="título-nossahistoria">Recursos Humanos</h3>
             <p>
-              O curso técnico em Recursos Humanos tem por objetivo formar profissionais com competências e habilidades técnicas,
-              comportamentais e socioemocionais, para atuar nos processos de gestão de pessoas, de
-              forma ética e profissional.
+              O curso técnico em Recursos Humanos tem por objetivo formar profissionais preparados para atuar em todos os processos de gestão de pessoas, desde o recrutamento e seleção até o desenvolvimento, treinamento, avaliação de desempenho e administração de benefícios. 
+              <br /><br />
+              O profissional formado estará apto a lidar com rotinas de departamento pessoal, legislação trabalhista, folha de pagamento, além de desenvolver habilidades comportamentais e socioemocionais essenciais para o ambiente corporativo moderno.
+              <br /><br />
+              O curso também aborda temas como comunicação organizacional, ética profissional, clima e cultura organizacional, promovendo uma visão estratégica do papel do RH nas empresas. 
+              <br /><br />
+              O técnico em RH pode atuar em empresas de todos os portes e segmentos, consultorias, órgãos públicos e também empreender na área de gestão de pessoas.
             </p>
             
             <Link className="download" to="/recursoshumanos" aria-label="Mais informações sobre Recursos Humanos">

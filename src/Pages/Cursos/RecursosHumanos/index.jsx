@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../../../App.css';
-;
 
 const RecursosHumanos = () => {
   const [activeTab, setActiveTab] = useState('subsequente');
@@ -70,7 +69,10 @@ const RecursosHumanos = () => {
   return (
     <div className="site">
       <div className="site-content">
-        <h2 className="cursos-titulo">RECURSOS HUMANOS</h2>
+        <br />
+        <br />
+        <br />
+        <h1 className="cursos-titulo">RECURSOS HUMANOS</h1>
         
         <article>
           <p className="content__p">
@@ -85,26 +87,25 @@ const RecursosHumanos = () => {
                 <button 
                   className={`app__card-button aba-curso ${activeTab === 'subsequente' ? 'active' : ''}`}
                   onClick={() => setActiveTab('subsequente')}
+                  aria-expanded={activeTab === 'subsequente'}
                 >
                   Modalidade Subsequente
                 </button>
               </li>
             </ul>
 
-            {activeTab === 'subsequente' && (
-              <div className="conteudo-aba-curso active" id="subsequente">
-                <table className="subsequente-table">
-                  <tbody>
-                    {courseInfo.subsequente.map((item, index) => (
-                      <tr key={index}>
-                        <th>{item.label}</th>
-                        <td>{item.value}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            )}
+            <div className={`conteudo-aba-curso ${activeTab === 'subsequente' ? 'active' : ''}`} id="subsequente">
+              <table className="subsequente-table">
+                <tbody>
+                  {courseInfo.subsequente.map((item, index) => (
+                    <tr key={index}>
+                      <th scope="row">{item.label}</th>
+                      <td>{item.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div className="objetivos">
@@ -133,12 +134,14 @@ const RecursosHumanos = () => {
           </div>
 
           <div className="grade-curricular">
+            <h2>Grade Curricular</h2>
             <ul className="abas-grade-curricular">
               {Object.keys(courseInfo.modulos).map((modulo) => (
                 <li key={modulo}>
                   <button 
                     className={`aba-grade-curricular ${activeModule === modulo ? 'active' : ''}`}
                     onClick={() => setActiveModule(modulo)}
+                    aria-expanded={activeModule === modulo}
                   >
                     {courseInfo.modulos[modulo].title}
                   </button>
@@ -151,13 +154,14 @@ const RecursosHumanos = () => {
                 key={modulo}
                 className={`conteudo-aba-grade-curricular ${activeModule === modulo ? 'active' : ''}`}
                 id={modulo}
+                role="tabpanel"
               >
                 <table className={`${modulo}-table`}>
                   <thead>
                     <tr>
-                      <th>Disciplinas</th>
-                      <th>Carga Semanal</th>
-                      <th>Carga Horária Total</th>
+                      <th scope="col">Disciplinas</th>
+                      <th scope="col">Carga Semanal</th>
+                      <th scope="col">Carga Horária Total</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -170,8 +174,7 @@ const RecursosHumanos = () => {
                     ))}
                   </tbody>
                 </table>
-                <p>Carga horária Total do {courseInfo.modulos[modulo].title}: {courseInfo.modulos[modulo].total}</p>
-                <br />
+                <p className="total-hours">Carga horária Total do {courseInfo.modulos[modulo].title}: {courseInfo.modulos[modulo].total}</p>
               </div>
             ))}
           </div>

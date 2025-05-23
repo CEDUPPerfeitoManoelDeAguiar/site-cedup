@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
+import './style.css'
 
 const Cursos = () => {
     
@@ -45,54 +46,52 @@ const Cursos = () => {
       title: "Desenvolvimento de Sistemas",
       image: "/imagens/cursos/Desenvolvimento de Sistemas.png",
       modalidades: "Integrado ao Ensino Médio - Integral\nSubsequente - Noturno\n100% presencial",
-      link: "/sistemas"
+      link: "/desenvolvimento-sistemas"
     },
     {
       id: 7,
       title: "Qualidade",
-      image: "/imagens/cursos/qualidade.png",
+      image: "/imagens/cursos/Logística.png",
       modalidades: "Subsequente - Noturno\n100% presencial",
       link: "/qualidade"
     }
   ];
 
   return (
-    <main>
-      <section className="cursos" id="cursos" name="cursos">
-        <br />
-        <br />
-        <br />
-        <h2 className="cursos-titulo">CURSOS</h2>
-        <div className="interface">
-          <div className="flex1">
-            {courses.map((course) => (
-              <div className="cursos-box" key={course.id}>
-                {course.link !== "#" ? (
-                  <Link to={course.link}>
+    <main className="site">
+      <div className="site-content">
+        <section className="cursos" id="cursos" name="cursos">
+          <h2 className="cursos-titulo">CURSOS</h2>
+          <div className="interface">
+            <div className="cursos-container">
+              {courses.map((course) => (
+                <Link 
+                  to={course.link} 
+                  className="cursos-box" 
+                  key={course.id}
+                >
+                  <div className="cursos-box-content">
                     <img src={course.image} alt={course.title} />
-                  </Link>
-                ) : (
-                  <img src={course.image} alt={course.title} />
-                )}
-                <h3>{course.title}</h3>
-                <br />
-                <br />
-                <p className="cursos-subtitulo">
-                  <b>Modalidades:</b> <br />
-                  {course.modalidades.split('\n').map((line, i) => (
-                    <React.Fragment key={i}>
-                      {line}
-                      <br />
-                    </React.Fragment>
-                  ))}
-                </p>
-              </div>
-            ))}
+                    <h3>{course.title}</h3>
+                    <p className="cursos-subtitulo">
+                      <b>Modalidades:</b> <br />
+                      {course.modalidades.split('\n').map((line, i) => (
+                        <React.Fragment key={i}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 };
+
 
 export default Cursos;

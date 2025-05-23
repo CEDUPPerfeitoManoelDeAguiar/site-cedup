@@ -9,6 +9,9 @@ import './App.css';
 import NovosCursos from "./Pages/NovosCursos";
 import Cursos from "./Pages/Cursos";
 import RecursosHumanos from "./Pages/Cursos/RecursosHumanos";
+import Gremio from "./Pages/Gremio";
+import DesenvolvimentoSistemas from "./Pages/Cursos/DesenvolvimentoDeSistemas";
+import Logistica from "./Pages/Cursos/Logistica";
 
 const AnimatedPage = ({ children }) => (
   <motion.div
@@ -42,7 +45,9 @@ function AnimatedRoutes() {
           <Route path="/novos-cursos" element={<LayoutWithHeader><NovosCursos /></LayoutWithHeader>} />
           <Route path="/cursos" element={<LayoutWithHeader><Cursos /></LayoutWithHeader>} />
           <Route path="/recursoshumanos" element={<LayoutWithHeader><RecursosHumanos /></LayoutWithHeader>} />
-
+          <Route path="/gremio" element={<LayoutWithHeader><Gremio /></LayoutWithHeader>} />
+          <Route path="/desenvolvimento-sistemas" element={<LayoutWithHeader><DesenvolvimentoSistemas /></LayoutWithHeader>} />7
+          <Route path="/logistica" element={<LayoutWithHeader><Logistica /></LayoutWithHeader>} />
       </Routes>
     </AnimatePresence>
   );

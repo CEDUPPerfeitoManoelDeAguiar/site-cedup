@@ -1,0 +1,101 @@
+/* Container principal */
+.site {
+  background-color: var(--color-background);
+  padding: var(--space-xl) 0;
+}
+
+.site-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Grid de cursos */
+.cursos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+/* Estilo do card (agora é o próprio Link) */
+.cursos-box {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  border-top: 5px solid var(--color-secondary-light);
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cursos-box:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cursos-box-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cursos-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: var(--color-background);
+  padding: var(--space-md);
+  transition: var(--transition-normal);
+}
+
+.cursos-box:hover img {
+  transform: scale(1.05);
+}
+
+.cursos-box h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 var(--space-md);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.cursos-subtitulo {
+  padding: 0 var(--space-md) var(--space-lg);
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.cursos-subtitulo b {
+  color: var(--color-primary);
+}
+
+/* Título da seção */
+.cursos-titulo {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  padding-bottom: var(--space-md);
+}
+
+.cursos-titulo::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--color-secondary);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
