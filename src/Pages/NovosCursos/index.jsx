@@ -9,7 +9,7 @@ const NovosCursos = () => {
         <br />
         <br />
       <div className="site-content container">
-        <h1 className="cursos-titulo-pronatec">Novos Cursos 2025/04</h1>
+        <h1 className="cursos-titulo-pronatec">Novos Cursos 2025/02</h1>
 
         <article className="content__pronatec">
           <p className="intro-text">

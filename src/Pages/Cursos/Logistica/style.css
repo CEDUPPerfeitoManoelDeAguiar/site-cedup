@@ -291,7 +291,28 @@
   }
 }
 
-/* Responsividade */
+@media (max-width: 1200px) {
+  .site-content {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cursos-titulo {
+    font-size: 2.2rem;
+    margin: var(--space-lg) 0;
+  }
+  
+  .subsequente-table th,
+  .subsequente-table td,
+  .modulo1-table th,
+  .modulo1-table td,
+  .modulo2-table th,
+  .modulo2-table td {
+    padding: var(--space-xs) var(--space-sm);
+  }
+}
+
 @media (max-width: 768px) {
   .cursos-titulo {
     font-size: 2rem;
@@ -302,6 +323,11 @@
     flex-direction: column;
   }
   
+  .app__card-button.aba-curso,
+  .aba-grade-curricular {
+    padding: var(--space-sm);
+  }
+  
   .subsequente-table th,
   .subsequente-table td {
     display: block;
@@ -310,7 +336,6 @@
   
   .subsequente-table th {
     padding-bottom: 0;
-    width: 100%;
   }
   
   .modulo1-table,
@@ -319,38 +344,72 @@
     overflow-x: auto;
   }
   
-  .app__card-button.aba-curso.active::after,
-  .aba-grade-curricular.active::after {
-    height: 2px;
-  }
-  
-  .objetivos li,
-  .perfil-egresso li {
-    margin-bottom: var(--space-md);
-  }
-}
-
-@media (max-width: 576px) {
-  .cursos-titulo {
-    font-size: 1.8rem;
-  }
-  
-  .site-content {
-    padding: 0 var(--space-sm) var(--space-lg);
-  }
-  
   .conteudo-aba-curso,
   .objetivos,
   .perfil-egresso,
   .grade-curricular {
     padding: var(--space-md);
   }
+}
+
+@media (max-width: 576px) {
+  .cursos-titulo {
+    font-size: 1.8rem;
+    padding-bottom: var(--space-sm);
+  }
+  
+  .cursos-titulo::after {
+    width: 80px;
+    height: 3px;
+  }
+  
+  .site-content {
+    padding: 0 var(--space-sm) var(--space-md);
+  }
   
   .content__p {
     font-size: 1rem;
   }
   
+  .objetivos h2,
+  .perfil-egresso h2,
+  .grade-curricular h2 {
+    font-size: 1.5rem;
+  }
+  
+  .objetivos ul,
   .perfil-egresso ul {
     padding-left: var(--space-md);
+  }
+  
+  .subsequente-table th,
+  .subsequente-table td,
+  .modulo1-table th,
+  .modulo1-table td,
+  .modulo2-table th,
+  .modulo2-table td {
+    padding: var(--space-xs);
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cursos-titulo {
+    font-size: 1.6rem;
+  }
+  
+  .app__card-button.aba-curso,
+  .aba-grade-curricular {
+    font-size: 0.9rem;
+    padding: var(--space-xs) var(--space-sm);
+  }
+  
+  .objetivos li,
+  .perfil-egresso li {
+    font-size: 0.9rem;
+  }
+  
+  .total-hours {
+    font-size: 0.9rem;
   }
 }
