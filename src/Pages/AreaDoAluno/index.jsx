@@ -6,13 +6,6 @@ import './style.css';
 const AreaDoAluno = () => {
   const studentResources = [
     {
-      id: 1,
-      title: "Horário de aulas",
-      image: "/imagens/Area-do-aluno/horário.png",
-      link: "/horario-aulas",
-      alt: "Horário de aulas"
-    },
-    {
       id: 2,
       title: "Cardápio",
       image: "/imagens/Area-do-aluno/cardapio.png",
