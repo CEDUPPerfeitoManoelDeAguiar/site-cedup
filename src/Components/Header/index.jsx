@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
-import './style.css';
+import MenuIcon from '@mui/icons-material/Menu';
+import EmailIcon from '@mui/icons-material/Email';
+import PersonIcon from '@mui/icons-material/Person';
+import SchoolIcon from '@mui/icons-material/School';
+import InfoIcon from '@mui/icons-material/Info';
+import HomeIcon from '@mui/icons-material/Home';
 
 const Header = () => {
   const toggleMenu = () => {
@@ -21,38 +26,38 @@ const Header = () => {
           <ul className="nav-menu">
             <li className="nav-item">
               <Link to="/" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons"></span>
+                <HomeIcon />
                 <span>Início</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/sobre" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons"></span>
+                <InfoIcon />
                 <span>Sobre</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/cursos" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons"></span>
+                <SchoolIcon />
                 <span>Cursos</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/areadoaluno" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons"></span>
+                <PersonIcon />
                 <span>Área do Aluno</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/contato" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons"></span>
+                <EmailIcon />
                 <span>Contato</span>
               </Link>
             </li>
           </ul>
           
           <button className="menu-toggle" onClick={toggleMenu}>
-            <span className="material-icons">menu</span>
+            <MenuIcon />
           </button>
         </nav>
       </div>

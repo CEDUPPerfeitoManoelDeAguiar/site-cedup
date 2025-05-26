@@ -1,21 +1,18 @@
-/* Adicione no seu CSS existente */
-
 .menu-toggle {
   display: none; /* Escondido por padrão em desktop */
   background: none;
   border: none;
-  font-size: 1.8rem;
   color: var(--color-primary);
   cursor: pointer;
   z-index: 1001;
   padding: var(--space-xs);
 }
 
-.menu-toggle .material-icons {
+.menu-toggle svg { /* Estilo para o ícone do menu (hamburguer) */
   font-size: 2rem;
 }
 
-.menu-toggle.active .material-icons {
+.menu-toggle.active svg {
   color: var(--color-secondary);
 }
 
@@ -57,7 +54,7 @@
     gap: var(--space-sm);
   }
   
-  .nav-link .material-icons {
+  .nav-link svg { /* Estilo para os ícones dos links */
     font-size: 1.5rem;
   }
 }
