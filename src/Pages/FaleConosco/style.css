@@ -125,21 +125,21 @@ input[type="submit"]:hover {
 
 .menu_sobre {
   display: flex;
-  justify-content: center;
-  gap: var(--space-md);
-  margin: var(--space-lg) auto;
-  max-width: 1200px;
-  padding: 0 var(--space-md);
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: var(--space-md) auto;
+  padding: 0 var(--space-sm);
+  max-width: 100%;
 }
-
 .submenu {
-  padding: var(--space-sm) var(--space-lg);
+  padding: var(--space-sm);
   background-color: var(--color-secondary);
   color: var(--color-white);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-md);
   font-weight: 600;
-  transition: var(--transition-normal);
   text-align: center;
+  width: 100%;
+  transition: var(--transition-fast);
 }
 
 .submenu:hover {
@@ -149,33 +149,37 @@ input[type="submit"]:hover {
 }
 
 .site-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--space-md);
+  padding: var(--space-sm);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .divisões {
-  display: grid;
-  gap: var(--space-xl);
-  margin-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
 }
 
 .títulos h1 {
   color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
 }
 
 .títulos p {
   color: var(--color-text-light);
-  margin-bottom: var(--space-lg);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
 }
+
 
 .item-contato, .quadro-contato {
   background: var(--color-white);
   padding: var(--space-md);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  line-height: 1.8;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  line-height: 1.6;
 }
 
 .item-contato b {
@@ -185,7 +189,7 @@ input[type="submit"]:hover {
 .cadastro {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .field {
@@ -201,12 +205,10 @@ input[type="submit"]:hover {
 
 .field input,
 .field textarea {
-  padding: var(--space-sm);
-  border: 1px solid var(--color-secondary-lighter);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-primary);
-  transition: var(--transition-fast);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.95rem;
 }
+
 
 .field input:focus,
 .field textarea:focus {
@@ -216,79 +218,57 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"] {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  border: none;
-  padding: var(--space-sm) var(--space-md);
-  border-radius: var(--radius-xl);
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition-normal);
   width: 100%;
-}
-
-@media (min-width: 400px) {
-  .submenu {
-    min-width: 140px;
-  }
-  .títulos h1 {
-    font-size: 1.9rem;
-  }
-  .títulos p {
-    font-size: 1.05rem;
-  }
-  input[type="submit"] {
-    width: auto;
-    align-self: flex-start;
-  }
-}
-
-@media (min-width: 576px) {
-  .divisões {
-    grid-template-columns: 1fr;
-  }
-  .títulos h1 {
-    font-size: 2rem;
-  }
-  .títulos p {
-    font-size: 1.1rem;
-  }
-  .item-contato, .quadro-contato {
-    padding: var(--space-lg);
-  }
-  .field textarea {
-    min-height: 140px;
-  }
+  padding: var(--space-sm);
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
   .menu_sobre {
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
   }
+  
   .submenu {
     width: auto;
-    max-width: none;
+    min-width: 160px;
+    padding: var(--space-sm) var(--space-md);
   }
+  
   .divisões {
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    gap: var(--space-lg);
   }
+  
   .títulos h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
+  
   .field textarea {
-    min-height: 150px;
+    min-height: 120px;
   }
 }
 
 @media (min-width: 992px) {
   .site-content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: var(--space-lg);
   }
+  
   .títulos h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
-  .títulos p {
-    font-size: 1.15rem;
+  
+  .item-contato, .quadro-contato {
+    padding: var(--space-lg);
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    padding: var(--space-sm) var(--space-lg);
   }
 }
 
@@ -296,7 +276,8 @@ input[type="submit"] {
   .títulos h1 {
     font-size: 2.5rem;
   }
+  
   .títulos p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

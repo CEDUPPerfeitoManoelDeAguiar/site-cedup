@@ -88,7 +88,7 @@ const QueroTrabalhar = () => {
         </div>
            <div className="menu_sobre">
                 <a className="submenu" href="/contato">Fale Conosco</a>                    
-                <a className="submenu" href="/trabalhe-conosco">Documentos Necessários</a>                    
+                <a className="submenu" href="https://www.sed.sc.gov.br/concursos/act-admissao-de-professores-em-carater-temporario/ ">Mais Informações</a>                    
             </div>
       </div>
     </main>
