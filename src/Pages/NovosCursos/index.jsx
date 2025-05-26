@@ -23,12 +23,12 @@ const NovosCursos = () => {
           
           <a 
             className="download1" 
-            href="https://forms.gle/Rspv9iXzPoGmsCLF7"
+            href="https://chat.whatsapp.com/ENpkUsBFhIQ0n8WwKekp9p "
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Formulário de intenção de matrícula"
           >
-            Indicar intenção de matrícula
+            Entrar no grupo de WhatsApp para receber informações sobre o curso
           </a>
 
           <div className="course-section">

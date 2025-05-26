@@ -73,7 +73,7 @@ const Home = () => {
                   { date: '11 JUL', title: 'Festa Junina' },
                   { date: '21 JUL', title: 'Inicio do Recesso dos Alunos' },
                   { date: '04 AGO', title: 'Inicio do Segundo Semestre' },
-                  { date: '08 AGO', title: 'Formatura Técnica Subsequente' },
+                  { date: '08 AGO', title: 'Formatura Técnico Subsequente' },
                   { date: '20 AGO', title: 'XVI FECITEC Regional' },
                   { date: '28 AGO', title: 'Desfile Aniversário de Guaramirim' },
                   { date: '22-26 SET', title: 'Semana de Ética e Cidadania' },
