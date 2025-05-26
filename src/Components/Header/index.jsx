@@ -21,31 +21,31 @@ const Header = () => {
           <ul className="nav-menu">
             <li className="nav-item">
               <Link to="/" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons">home</span>
+                <span className="material-icons"></span>
                 <span>Início</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/sobre" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons">info</span>
+                <span className="material-icons"></span>
                 <span>Sobre</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/cursos" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons">school</span>
+                <span className="material-icons"></span>
                 <span>Cursos</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/areadoaluno" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons">person</span>
+                <span className="material-icons"></span>
                 <span>Área do Aluno</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/contato" className="nav-link" onClick={toggleMenu}>
-                <span className="material-icons">email</span>
+                <span className="material-icons"></span>
                 <span>Contato</span>
               </Link>
             </li>
