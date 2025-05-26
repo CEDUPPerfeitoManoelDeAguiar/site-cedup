@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import './style.css';
+
 const TrabalheConosco = () => {
   const documents = [
     {
@@ -124,25 +125,43 @@ const TrabalheConosco = () => {
     }
   ];
 
-  return (
+   return (
     <main className="content">
       <article>
+        <br />
+        <br />
+        <br />
         <h1 className="content__title">Documentos necessários para contratação de professores:</h1>
         
         <div className="document-list">
           {documents.map((doc) => (
-            <label key={doc.id} className="label-list" htmlFor={`toggle-${doc.id}`}>
-              <input type="checkbox" id={`toggle-${doc.id}`} />
-              {doc.title}
-              {doc.description && (
-                <div className="content__p">
-                  {doc.description}
+            <div key={doc.id} className="document-item">
+              {doc.description ? (
+                <div className="expandable-item">
+                  <input 
+                    type="checkbox" 
+                    id={`toggle-${doc.id}`} 
+                    className="expandable-checkbox"
+                  />
+                  <label className="label-list" htmlFor={`toggle-${doc.id}`}>
+                    {doc.title}
+                  </label>
+                  <div className="expandable-content">
+                    {doc.description}
+                  </div>
+                </div>
+              ) : (
+                <div className="label-list no-description">
+                  {doc.title}
                 </div>
               )}
-            </label>
+            </div>
           ))}
+          <a className="submenu" href="/quero-trabalhar">Trabalhe Conosco</a>  
         </div>
+        
       </article>
+      
     </main>
   );
 };

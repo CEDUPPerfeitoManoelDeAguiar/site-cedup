@@ -5,12 +5,8 @@ import './style.css'
 const FaleConosco = () => {
   return (
     <main>
-      <div className="menu_sobre">
-        <a className="submenu" href="https://cedupguaramirim.com.br/html/faleconosco.html">Fale Conosco</a>                    
-        <a className="submenu" href="https://cedupguaramirim.com.br/html/querotrabalhar.html">Trabalhe Conosco</a>                    
-      </div>
-      
       <div className="site-content">
+        <br />
         <div className="divisões">
           <div className="títulos">
             <h1>Fale conosco</h1>

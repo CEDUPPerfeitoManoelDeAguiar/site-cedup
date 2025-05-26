@@ -1,0 +1,282 @@
+/* estilo.css */
+main {
+  background: linear-gradient(135deg, #f7f9fc 0%, #e6f0fa 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Ancizar Sans', sans-serif;
+}
+
+.menu_sobre {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.submenu {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4476bb 0%, #47ace0 100%);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  box-shadow: 0 5px 15px rgba(68, 118, 187, 0.3);
+  text-decoration: none;
+}
+
+.submenu:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(68, 118, 187, 0.4);
+  background: linear-gradient(135deg, #47ace0 0%, #6c65bb 100%);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4476bb, #47ace0);
+}
+
+.content h1 {
+  color: #2a3a5a;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #4476bb, #47ace0);
+  border-radius: 2px;
+}
+
+.content p {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.quadro-contato {
+  background: rgba(71, 172, 224, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px dashed #47ace0;
+}
+
+.cadastro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2a3a5a;
+  font-weight: 600;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"],
+.field select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.field input[type="text"]:focus,
+.field input[type="email"]:focus,
+.field input[type="tel"]:focus,
+.field select:focus {
+  border-color: #47ace0;
+  box-shadow: 0 0 0 3px rgba(71, 172, 224, 0.2);
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #4476bb 0%, #47ace0 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  box-shadow: 0 5px 15px rgba(68, 118, 187, 0.3);
+  margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(68, 118, 187, 0.4);
+  background: linear-gradient(135deg, #47ace0 0%, #6c65bb 100%);
+}
+
+@media (max-width: 992px) {
+  main {
+    padding: 1.5rem;
+  }
+  
+  .content {
+    padding: 2.5rem;
+  }
+  
+  .content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .menu_sobre {
+    gap: 1rem;
+  }
+  
+  .submenu {
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  
+  .content {
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+  }
+  
+  .content h1::after {
+    width: 80px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quadro-contato {
+    padding: 1.5rem;
+  }
+  
+  .cadastro {
+    gap: 1rem;
+  }
+  
+  input[type="submit"] {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 0.8rem;
+  }
+  
+  .content {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .content::before {
+    width: 5px;
+  }
+  
+  .content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .menu_sobre {
+    margin-bottom: 2rem;
+  }
+  
+  .submenu {
+    font-size: 0.9rem;
+  }
+  
+  .field input[type="text"],
+  .field input[type="email"],
+  .field input[type="tel"],
+  .field select {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+  }
+  
+  .checkbox-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    padding: 1.2rem;
+  }
+  
+  .content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .submenu {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+  
+  input[type="submit"] {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}

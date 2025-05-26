@@ -120,17 +120,17 @@ const FeiraCiencia = () => {
         <p>Os arquivos oficiais da feira estão disponíveis para consulta e download. Acesse abaixo:</p>
         <ul className="feira-list download-list">
           <li>
-            <a href="/public/documentos/REGULAMENTO I FEIRA DE CIÊNCIA E TECNOLOGIA CEDUP.pdf" download="REGULAMENTO I FEIRA DE CIÊNCIA E TECNOLOGIA CEDUP.pdf">
+            <a href="/documentos/REGULAMENTO I FEIRA DE CIÊNCIA E TECNOLOGIA CEDUP.pdf" download="REGULAMENTO I FEIRA DE CIÊNCIA E TECNOLOGIA CEDUP.pdf">
               Regulamento completo da feira (Edital)
             </a>
           </li>
           <li>
-            <a href="/public/documentos/Projeto de Pesquisa - Template.docx" download="Projeto de Pesquisa - Template.docx">
+            <a href="/documentos/Projeto de Pesquisa - Template.docx" download="Projeto de Pesquisa - Template.docx">
               Modelo de projeto (Anexo II)
             </a>
           </li>
           <li>
-            <a href="/public/documentos/Ficha de Inscrição.docx" download="Ficha de Inscrição.docx">
+            <a href="/documentos/Ficha de Inscrição.docx" download="Ficha de Inscrição.docx">
               Ficha de inscrição (Anexo I)
             </a>
           </li>

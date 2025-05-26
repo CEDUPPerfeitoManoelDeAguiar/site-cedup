@@ -241,14 +241,44 @@
   font-size: 1.2rem;
 }
 
-/* Responsividade */
+@media (max-width: 1200px) {
+  .feira-container {
+    max-width: 1000px;
+    padding: 2.5rem;
+  }
+  
+  .feira-title {
+    font-size: 2.8rem;
+  }
+  
+  .download-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
 @media (max-width: 992px) {
   .feira-container {
     padding: 2rem;
+    margin: 1.5rem auto;
   }
   
   .feira-title {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feira-section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feira-theme {
+    font-size: 1.8rem;
+    padding: 1.8rem;
+  }
+  
+  .contact-section {
+    padding: 2rem;
   }
 }
 
@@ -256,32 +286,113 @@
   .feira-container {
     padding: 1.5rem;
     margin: 1rem;
+    border-radius: 15px;
   }
   
   .feira-title {
     font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .feira-title::after {
+    width: 120px;
   }
   
   .feira-section {
     padding: 1.5rem;
   }
   
+  .feira-section h2 {
+    font-size: 1.7rem;
+  }
+  
+  .feira-list li {
+    padding: 1rem;
+    padding-left: 2.5rem;
+  }
+  
   .feira-theme {
     font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .contact-section {
     padding: 1.5rem;
   }
 }
 
 @media (max-width: 576px) {
+  .feira-container {
+    padding: 1.2rem;
+    margin: 0.5rem;
+    border-radius: 12px;
+  }
+  
   .feira-title {
     font-size: 1.8rem;
+    letter-spacing: 0;
+  }
+  
+  .feira-section {
+    padding: 1.2rem;
   }
   
   .feira-section h2 {
     font-size: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
   
-  .download-list {
-    grid-template-columns: 1fr;
+  .feira-section h2::before {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .feira-list li {
+    padding: 0.8rem 1rem 0.8rem 2.2rem;
+  }
+  
+  .feira-list li::before {
+    left: 1rem;
+  }
+  
+  .feira-theme {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+  }
+  
+  .download-list li a {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-section {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .feira-title {
+    font-size: 1.6rem;
+  }
+  
+  .feira-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .feira-list li {
+    padding-left: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .feira-theme {
+    font-size: 1.1rem;
+  }
+  
+  .download-list li a {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
