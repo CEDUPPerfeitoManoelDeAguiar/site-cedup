@@ -70,7 +70,7 @@ const Home = () => {
                 {[
                   { date: '28 JUN', title: 'Sábado Letivo' },
                   { date: '30 JUN', title: 'IV Feira de Ciência e Tecnologia', link: '/feira-ciencias' },
-                  { date: '11 JUL', title: 'Festa Junina' },
+                  { date: '18 JUL', title: 'Festa Junina' },
                   { date: '21 JUL', title: 'Inicio do Recesso dos Alunos' },
                   { date: '04 AGO', title: 'Inicio do Segundo Semestre' },
                   { date: '15 AGO', title: 'Formatura Técnico Subsequente' },
