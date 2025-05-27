@@ -21,6 +21,7 @@ import AreaDoAluno from "./Pages/AreaDoAluno";
 import FaleConosco from "./Pages/FaleConosco";
 import TrabalheConosco from "./Pages/TrabalheConosco";
 import QueroTrabalhar from "./Pages/QueroTrabalhar";
+import Cardapio from "./Pages/Cardapio";
 
 const AnimatedPage = ({ children }) => (
   <motion.div
@@ -66,6 +67,7 @@ function AnimatedRoutes() {
           <Route path="/contato" element={<LayoutWithHeader><FaleConosco /></LayoutWithHeader>} />
           <Route path="/quero-trabalhar" element={<LayoutWithHeader><QueroTrabalhar /></LayoutWithHeader>} />
           <Route path="/trabalhe-conosco" element={<LayoutWithHeader><TrabalheConosco /></LayoutWithHeader>} />
+          <Route path="/cardapio" element={<LayoutWithHeader><Cardapio /></LayoutWithHeader>} />
       </Routes>
     </AnimatePresence>
   );
