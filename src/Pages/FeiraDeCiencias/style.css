@@ -374,3 +374,35 @@
     gap: 0.5rem;
   }
 }
+
+@media (max-width: 430px) {
+  .feira-container {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+  }
+  .feira-title {
+    font-size: 1.7rem;
+  }
+  .feira-section {
+    padding: 1rem;
+  }
+  .feira-section h2 {
+    font-size: 1.4rem;
+  }
+  .feira-list li {
+    padding: 0.8rem 1rem 0.8rem 2rem;
+    font-size: 0.95rem;
+  }
+  .feira-theme {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .download-list li a {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  .contact-section {
+    padding: 1rem;
+  }
+}

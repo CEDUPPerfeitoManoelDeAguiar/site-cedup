@@ -1,3 +1,5 @@
+
+
 .menu_sobre {
   display: flex;
   justify-content: center;
@@ -6,6 +8,7 @@
   max-width: 1200px;
   padding: 0 var(--space-md);
 }
+
 
 .submenu {
   padding: var(--space-sm) var(--space-lg);
@@ -313,5 +316,52 @@ input[type="submit"]:hover {
   
   .títulos p {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .menu_sobre {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .submenu {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .divisões {
+    grid-template-columns: 1fr;
+  }
+
+  .títulos h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .títulos p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .site-content {
+    padding: 1rem;
+  }
+
+  .item-contato, .quadro-contato {
+    padding: 1rem;
+  }
+
+  .field input,
+  .field textarea {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
   }
 }
