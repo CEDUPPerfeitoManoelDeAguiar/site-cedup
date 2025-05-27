@@ -537,6 +537,7 @@ p {
   margin: var(--space-lg) 0 var(--space-md);
   position: relative;
   padding-left: var(--space-md);
+  text-align: justify;
 }
 
 .historia-subtitulo::before {
@@ -549,6 +550,7 @@ p {
   height: 10px;
   background-color: var(--color-secondary);
   border-radius: 50%;
+  text-align: justify;
 }
 
 .historia-content {
@@ -556,6 +558,7 @@ p {
   gap: var(--space-lg);
   margin-top: var(--space-lg);
   align-items: flex-start;
+  text-align: justify;
 }
 
 .historia-imagem {
@@ -578,10 +581,12 @@ p {
 
 .historia-texto {
   flex: 1;
+    text-align: justify;
 }
 
 .historia-texto p {
   margin-bottom: var(--space-md);
+    text-align: justify;
 }
 
 .content__p {
